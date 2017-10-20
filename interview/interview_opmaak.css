@@ -1,0 +1,77 @@
+@font-face 
+{
+    font-family: "Font";
+    src: url(GeorginaDemo-Regular.ttf) format("truetype");
+}
+	
+.customfont
+{
+	font-family: "Font";
+	font-size: 15pt;
+}
+.container
+{
+	 width: 100%;
+	 margin-bottom: 4.5em;
+	 
+}
+.container2
+{
+	padding-top: 0.8em;
+	text-align: center;
+}
+.container3
+{
+	width: 65%;
+	background-color: white;
+	border-radius: 10px;
+	margin: 0 auto;
+	box-shadow: 0 0 5px 1px #969696;
+	
+}
+.title
+{
+	 position: relative;	
+}
+.title::after
+{
+	content: '';
+	width: 100%;
+	position: absolute;
+	height: 4px;
+	bottom: -0.3em;
+	left: 0;
+	border-radius: 4px;
+	background-color: rgba(77,147,14,1.00);
+}
+
+body
+{
+	padding: 0;
+	margin: 0;
+	background-color: rgba(64,70,69,0.23);
+}
+h4 
+{
+	text-align: center;
+}
+.h4c
+{
+	color: rgba(159,5,10,1.00);
+}
+.divul
+{
+	position: relative;
+	
+}
+ul
+{
+margin: 0;
+padding: 0;
+list-style-type: none;
+text-align: center;
+}
+li
+{
+	padding-bottom: 0.3em;
+}

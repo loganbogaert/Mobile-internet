@@ -1,0 +1,75 @@
+    
+.Hoofdtitel,.datum
+{
+    
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #595959;
+    margin-bottom: 0.5em;
+}
+.Hoofdtitel
+{
+    font-size: 25pt;
+}
+.Hoofdtitel::after,.datum::after
+{
+    content: '';
+    position: absolute;
+    width: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -0.2em;
+    transition: width 0.3s;    
+}
+.Hoofdtitel::after
+{
+    height: 5px;
+    background-color: #00cccc;
+    border-radius: 6px;
+}
+.datum::after
+{
+    height: 3px;
+    background-color: #666600;
+    border-radius: 4px; 
+}
+.Hoofdtitel:hover::after,.datum:hover::after
+{
+    width: 100%;
+    transition: width 0.3s;
+}
+.container
+{
+    width: 100%;
+}
+@font-face 
+{
+    font-family: "Font";
+    src: url(GeorginaDemo-Regular.ttf) format("truetype");
+}
+.customfont
+{
+	font-family: "Font";
+}
+body
+{
+    background-color: #f2ffe6;
+    padding: 0;
+    margin: 0;
+}
+.datum
+{
+    color: rgba(159,5,10,1.00);
+    font-size: 20pt;
+}
+.subcontainer
+{
+    width: 70%;
+    margin: 0 auto 2.5em auto;
+}
+p
+{
+    line-height: 200%;
+}
