@@ -1,0 +1,119 @@
+body {
+    font-family: "Segoe UI",Frutiger,"Frutiger Linotype","Dejavu Sans","Helvetica Neue",Arial,sans-serif;
+    margin: 0%;
+}
+
+ul {
+    font-family: "Segoe UI",Frutiger,"Frutiger Linotype","Dejavu Sans","Helvetica Neue",Arial,sans-serif;
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    background-color: dimgray;
+    color: whitesmoke;
+    width: 100%;
+    position: fixed; /* Make it stick, even on scroll */
+    display: inline;
+}
+
+li a {
+    height: 100%;
+    float: left;
+    color: white;
+    padding: 7px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: white;
+    color: dimgray;
+}
+
+li a.active{
+    background-color: white;
+    color: dimgray;
+}
+
+li a:hover:not(.active) {
+    background-color: white;
+    color: dimgray;
+}
+
+.Tussentitels{
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.ContentText{
+    margin-left: 5%;
+}
+
+table, td, th {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    height: 50px;
+    vertical-align: bottom;
+}
+
+.zeer_belangrijk{
+    font-size: 200%;
+    background-color: #f44336;
+    display: block;
+    padding: 5px;
+    color: white;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.belangrijk{
+    font-size: 150%;
+    background-color: orange;
+    padding: 3px;
+    color: black;
+    margin-left: 30%;
+    margin-right: 30%;
+    align-content: center;
+    text-align: center;
+    vertical-align: middle; 
+
+}
+
+.gevraagd{
+    font-size: 100%;
+    background-color: #4CAF50;
+    padding: 1px;
+    color: white;
+    margin-left: 30%;
+    margin-right: 30%;
+    align-content: center;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.hoofdtitel{
+    font-size: 200%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.titels{
+    font-size: 150%;
+    margin-left: 10%;
+
+}
+
+.content{
+    margin-left: 10%;
+    margin-right: 30%;
+}
+
