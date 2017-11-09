@@ -1,0 +1,43 @@
+.titel,table
+{
+    position: relative;
+    display: table;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@font-face 
+{
+    font-family: "Font";
+    src: url(GeorginaDemo-Regular.ttf) format("truetype");
+}
+.customfont
+{
+	font-family: "Font";
+    color: #d1e0e0;
+}
+body
+{
+    background-color: #334d4d;
+}
+table,td,th
+{
+    border: 3px solid #a3a375;
+    border-collapse: collapse;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+table
+{
+    margin-top: 4.5em;
+    border-radius: 10px;
+}
+td
+{
+    text-align: left;
+}
+th
+{
+    text-align: center;
+}
