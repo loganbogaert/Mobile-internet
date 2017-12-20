@@ -1,0 +1,59 @@
+@font-face 
+{
+    font-family: "Font";
+    src: url(GeorginaDemo-Regular.ttf) format("truetype");
+}
+.customfont
+{
+	font-family: "Font";
+}
+.middle
+{
+    display: table;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #999999;
+}
+.middle::after
+{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 5px;
+    border-radius: 0.2em;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1.5em;
+    background-color: #88ff4d;
+    transition: 0.5s width;
+}
+.middle:hover::after
+{
+    width: 100%;
+    transition: 0.5s width;
+}
+.kaart
+{
+    width: 60%;
+    margin: 2em auto;
+    background-color: white;
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 5px black;
+}
+h3
+{
+    color: #c2c2a3;
+}
+img
+{
+    display: table;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+body
+{
+    background-color: #d6d6c2;
+}
