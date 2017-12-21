@@ -1,0 +1,105 @@
+.container_image
+{
+    height: 60vh;
+    width: 100%; 
+    background-color: #e6e6e6;
+    margin-top: 2.5em;
+    
+}
+.containerfix
+{
+    border-bottom: none;
+    border-style: 0px solid;
+}
+.container
+{
+   box-shadow: 0 0 0.2em #666666;
+}
+.container_box
+{
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 0.5em #666666;
+}
+.container_background0
+{
+     background-image: url(test.jpg);
+     transition: 2s;
+}
+.container_background1
+{
+     background-image: url(test2.jpg);
+     transition: 2s;
+}
+.container_background2
+{
+     background-image: url(test3.jpg);
+     transition: 2s;
+}
+@media screen and (max-width: 900px) 
+{
+   .container_background
+    {
+      width: 100%;
+    }
+    .container_box
+    {
+     width: 100%;
+    }
+}
+@media screen and (max-width: 400px) 
+{
+    h2
+    {
+        font-size: 13pt;
+    }
+}
+.containertext
+{
+    width: 70%;
+    margin: 0 auto;
+    line-height: 200%;
+    font-size: 14pt;
+}
+.extraMargin
+{
+    margin-bottom: 1.5em;
+}
+@media screen and (max-width: 900px) 
+{
+   .containertext
+   {
+    width: 85%;
+   }
+}
+.btn1
+{
+    display: table;
+    position: relative;
+    left: 50%;
+    padding: 1em 1em;
+    border-radius: 0.3em;
+    transform: translateX(-50%);
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+    background-color: #001a00;
+    color: #b8b894;
+    transition: 0.6s;
+    box-shadow: 0 0px 5px black;
+}
+.btn1:hover
+{
+    cursor: pointer;
+    text-shadow: none;
+    padding: 1em 1.5em;
+    transition: 0.6s;
+    box-shadow: 0 0px 20px black;
+}
+.nomargin
+{
+    margin: 0;
+}
+

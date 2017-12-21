@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html>
+    
+<head>
+    
+    <title>Contact</title>
+    
+    <link rel="stylesheet" type="text/css" href="../Contact/opmaak_contact.css">
+    
+    <link rel="stylesheet" type="text/css" href="../Contact/opmaak_contact2.css">
+    
+    <link rel="stylesheet" type="text/css" href="../Navbar/opmaak_navbar.css">
+    
+    <link rel="stylesheet" type="text/css" href="../Font-css/font.css">
+    
+    <link rel="stylesheet" type="text/css" href="../Endbar/endbar_opmaak.css">
+    
+    <link rel="stylesheet" type="text/css" href="../About/opmaak_about.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="../Contact/javascript_contact.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <script src ="../Home/js_home.js"></script>
+    <script>
+        
+        
+        $(document).ready(function()
+        {
+       
+        Delete000WebhostPopUp();
+        });
+    
+    </script>
+    
+    
+</head>
+    
+<body>
+  
+ <div id="fullCover" class="cover display"></div> 
+    
+ <div id="messagemail" class="messageMail">
+     
+ <h2 id="messagetext" class="customfont personalsize titleSocialMedia">Mail has been sent :</h2>    
+     
+ <button onclick="HidePopUp()" class="customfont btn btnmessage">
+    
+ <h4>Close</h4>
+     
+ </button>
+    
+ </div>
+     
+    
+ <header class="container color2">
+     
+     <div class="subcontainer">
+     
+     <h3 class="customfont title">Serge Taelemans</h3>    
+         
+         <a class="opennav customfont" onclick="ToonNavBar()">
+             
+         <div class="bar1"></div>
+         <div class="bar2"></div>
+         <div class="bar3"></div> 
+       
+                      </a>
+         
+     <nav class="nav1">
+     
+         <ul>
+             
+             <li class="li1 customfont subtitle bold nava"><a href="../Home/Home.html">Home</a></li>   
+             <li class="li1 customfont subtitle bold nava"><a href="../About/About.html">About me</a></li> 
+             <li class="li1 customfont subtitle bold nava"><a href="../Reference/Reference.html">Reference</a></li>  
+             <li class="li1 customfont subtitle bold nava"><a href="../Mission/Mission.html">Mission</a></li>
+             <li class="li1 customfont customh3 bold nava"><a href="../Contact/Contact.html">Contact</a></li>     
+             
+         </ul>
+         
+     </nav>
+            
+     </div>
+      
+ </header>
+     
+ <section class="container">
+  
+     <h2 class="customfont titleSocialMedia">Follow me on social media :</h2>
+     
+     <div class="subcontainer">
+               
+         <div class="divfb"><a href="https://www.facebook.com/staelemans" target="_blank"><img src="fb.png" class="img imgfb" alt="img not found" width="200" height="200"></a></div>
+         
+         <div class="divinstagram"><a href="https://www.instagram.com/staelemans/?hl=nl" target="_blank"><img src="instagram.jpg" class="img imgfb" alt="img not found" width="200" height="200"></a></div>
+         
+         <div class="divtwitter"><a href="https://twitter.com/wosta2" target="_blank"><img src="twitter.png" class="img imgfb" alt="img not found" width="200" height="200"></a></div>
+         
+         <div class="divlinkedin"><a a href="https://be.linkedin.com/in/serge-taelemans-8627142a" target="_blank"><img src="in.png" class="img imgfb" alt="img not found" width="200" height="200"></a></div>
+                      
+     </div>
+     
+    <h2 class="customfont titleSocialMedia">Send me an email :</h2>
+        
+    </section>
+    
+ <section class="container color">
+    
+     <div class="subcontainer">
+            
+     <div class="divemail">
+         
+     <h3 class="customfont emailh3">Email :</h3>
+         
+     <input type="text" id="email" class="customfont" name="email" placeholder="Email....">
+         
+     </div>
+         
+         
+         
+     <div class="divsubject">
+     
+     <h3 class="customfont subjecth3">Subject :</h3>
+         
+     <input type="text" id="subject" class="customfont" name="subject" placeholder="Subject....">
+         
+     </div>
+     
+         
+         
+    <div class="divmessage">
+        
+    <h3 class="customfont messageh3">Message :</h3>
+                 
+    </div>
+         
+    <textarea id="text" rows="7"></textarea>
+         
+   
+        
+         
+     <div class="divsubmit">
+         
+         <button onclick="SendRequest()" class="customfont btn"><h4>Submit</h4></button>
+         
+     </div>
+         
+     </div>
+     
+ </section>
+    
+ <footer class="container endtextdiv">
+ 
+ <h3 class="customfont endtext">Designed and developed by Logan Bogaert :</h3>     
+     
+</footer>
+    
+</body>
+    
+</html>

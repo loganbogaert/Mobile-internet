@@ -1,0 +1,60 @@
+.extraMargin
+{
+    margin-bottom: 2em;
+}
+img
+{
+    border-radius: 50%;
+    box-shadow: 0 0 0.2em black;
+    transition: 0.4s transform;
+}
+img:hover
+{
+    transform: scale(1.1,1.1);
+    transition: 0.4s transform;
+}
+.foto1,.foto2
+{
+   width: 200px;
+   height: 200px;
+}
+.foto3
+{
+}
+.foto1
+{  
+   margin-top: 2em;
+   margin-bottom: 2em;
+   float: left;
+   display: table;
+   margin-left: 15%;
+}
+.foto2
+{  
+   margin-top: 2em;
+   margin-bottom: 2em;
+   float: right;
+   display: table;
+   margin-right: 15%;
+}
+.clear
+{
+    clear: both;
+}
+
+@media screen and (max-width: 900px) 
+{
+   
+  .foto1,.foto2
+  {
+    float: none;
+    clear: both;
+    margin: 2em auto;
+  }
+  img,.foto1,.foto2
+  {
+   width: 150px;
+   height: 150px;
+  }
+    
+}

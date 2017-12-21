@@ -1,0 +1,157 @@
+
+.container
+{
+    width: 100%;
+    display: table;
+    margin: 0 auto;
+    box-shadow: 0 0 0.1em #666666;
+}
+.color
+{
+    background-color: #d9d9d9;
+}
+.color2
+{
+    background-color: #e6e6e6;
+}
+.subcontainer
+{
+    width: 80%;
+    display: table;
+    margin: 0 auto;
+}
+body
+{
+    padding: 0;
+    margin: 0;
+}
+.divemail,.divsubject,.divmessage,.divsubmit
+{
+    box-sizing: border-box;  
+}
+textarea
+{
+    float: left;
+    resize: none;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 1.5em;
+    border-radius: 0.3em;
+    box-shadow: 0px 0px 8px #888888;
+    border: 0.1em solid;
+    padding: 0;
+    box-sizing: border-box;
+}
+.divemail,.divsubject
+{
+     width: 40%;
+}
+.divmessage
+{
+    width: 65%;
+    clear: both;
+    padding-top: 2em;
+    padding-bottom: 0.4em;
+    margin: 0 auto;
+}
+.divemail
+{
+    float: left;
+}
+.divsubject
+{
+    float: right;
+}
+.divsubmit
+{
+    margin: 0 auto;
+    width: 60%;
+}
+.emailh3,.subjecth3,.messageh3
+{
+    margin-bottom: 0.4em;
+}
+.messageh3
+{
+    padding-left: 0;
+}
+.messageh3
+{
+    text-align: center;
+}
+#email,#subject
+{
+    width: 100%;
+    border-radius: 0.3em;
+    margin-bottom: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    box-shadow: 0px 0px 8px #888888;
+    border: 0.1em solid;
+    box-sizing: border-box;
+    padding-left: 0.3em;
+}
+.btn
+{
+    width: 40%;
+    background-color: #4be77a;
+    color: white;
+    margin-left: 30%;
+    margin-right: 30%;
+    box-shadow: 0px 0px 8px #888888;
+    border: 0.1em solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 1.5em;
+    transition: 0.5s background-color;
+}
+.btn:hover
+{
+    background-color: #2f6a31;
+    transition: 0.5s background-color;
+}
+.titleSocialMedia
+{
+    display: table;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.titleSocialMedia::after
+{
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #00cccc;
+    border-radius: 0.5em;
+    content: '';
+    bottom: -0.4em;
+    left: 0;
+}
+@media screen and (max-width: 1050px) 
+{
+    .divsubject
+    {
+        clear: both;
+    }
+    textarea,.divsubject
+    {
+        float: left;
+    }
+    .messageh3
+    {
+        text-align: left;
+    }
+    textarea,.divsubject,.divemail
+    {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .divmessage
+    {
+        margin-left: 5%;
+    }
+}
+
+
+

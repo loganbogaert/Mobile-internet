@@ -1,0 +1,9 @@
+@font-face 
+{
+    font-family: "Font";
+    src: url(Calibri.ttf) format("truetype");
+}
+.customfont
+{
+	font-family: "Font";
+}

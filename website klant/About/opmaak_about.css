@@ -1,0 +1,136 @@
+.divimg
+{
+    display: table;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1em;
+}
+img
+{
+    border-radius: 50%; 
+    box-shadow: 0 0 0.2em black;
+    transition: 0.3s;
+}
+.container2
+{
+    padding-bottom: 0.8em;
+}
+img:hover
+{
+    transform: scale(1.1,1.1);
+    transition: 0.3s;
+}
+.h3custom2
+{
+    margin-top: 2.5em;
+    font-size: 15pt;
+}
+.list1
+{
+    display: table;
+    
+    list-style: circle;
+    width: 100%;
+}
+.containerlist1,.containerlist2,.containerlist3
+{
+    width: 30%;
+}
+.containerlist1
+{
+    margin-left: 10%;
+    float: left;
+}
+.containerlist2
+{
+    margin-right: 10%;
+    float: right;
+}
+.containerlist3
+{
+    margin-left: 10%;
+    float: left;
+}
+li
+{
+    line-height: 170%;
+}
+.titlecompanys
+{
+    display: table;
+    margin-left: 0;
+    font-size: 11pt;
+    position: relative;
+}
+.titlecompanys::after
+{
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #b30000;
+    border-radius: 2px;
+    content: '';
+    bottom: -0.4em;
+    left: 0;
+}
+.arrow-up 
+{
+  width: 0; 
+  height: 0; 
+  border-left: 0.5em solid transparent;
+  border-right: 0.5em solid transparent;  
+  border-bottom: 0.5em solid black;
+  margin: 0.1em auto;
+  transform: rotateX(180deg);
+  padding-bottom: 0.2em;
+}
+.height
+{
+    line-height: 200%;
+}
+.bold,.height
+{
+    font-weight: bold;
+}
+.marginli
+{
+    margin: 1.33em 0;
+}
+@media screen and (max-width: 900px) 
+{
+  img
+  {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 1000px)
+{
+    .containerlist2,.containerlist3
+    {
+        clear: both;
+    }
+    .containerlist2,.containerlist3,.containerlist1
+    {
+        margin: 0 auto;
+        float: none;
+        width: 50%;
+      
+    }
+}
+@media screen and (max-width: 700px)
+{
+    .containerlist2,.containerlist3,.containerlist1
+    {
+        width: 70%;
+        font-size: 12pt;
+    }
+}
+@media screen and (max-width: 400px)
+{
+    .containerlist2,.containerlist3,.containerlist1
+    {
+        width: 85%;
+    }
+}

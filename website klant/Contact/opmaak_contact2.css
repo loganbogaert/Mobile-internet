@@ -1,0 +1,201 @@
+.img
+{
+    border-radius: 50%;
+    box-shadow: 0 0 0.2em black;
+    transition: 0.3s;
+}
+.img:hover
+{
+    transform: scale(1.05,1.05);
+    transition: 0.3s;
+}
+.divfb,.divtwitter
+{
+    width: 200px;
+    margin-left: 15%;
+    float: left;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.divtwitter
+{
+    clear: both;
+}
+.divinstagram,.divlinkedin
+{
+    width: 200px;
+    float: right;
+    margin-right: 15%;
+    margin-top: 2em;
+}
+@media screen and (max-width: 1050px) 
+{
+   .divfb,.divinstagram,.divtwitter,.divlinkedin
+   {
+    margin: 2em auto;
+    float: none;
+   }
+   .divinstagram
+   {
+        clear: both;
+   }
+}
+@media screen and (max-width: 900px)
+{
+   .img,.divfb,.divinstagram,.divtwitter,.divlinkedin
+   {
+    width: 150px;
+    height: 150px;
+   }
+}
+.cover
+{
+    background-color: rgba(0,0,0,0);
+    position:fixed;
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.display
+{
+   display: none;
+}
+.coverShown
+{   
+    display: block;
+    -webkit-animation-name: coverbg; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.7s;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
+    animation-name: coverbg;
+    animation-duration: 0.7s;
+    animation-iteration-count: 1;
+    background-color: rgba(0,0,0,0.9);
+}
+.uncoverShown
+{
+    -webkit-animation-name: uncoverbg; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.7s;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
+    animation-name: uncoverbg;
+    animation-duration: 0.7s;
+    animation-iteration-count: 1;
+    background-color: rgba(0,0,0,0);
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes coverbg
+{
+    from{background-color: rgba(0,0,0,0);}
+    to{background-color: rgba(0,0,0,0.9);}
+}
+/* Standard syntax */
+@keyframes coverbg 
+{
+    from{background-color: rgba(0,0,0,0);}
+    to{background-color: rgba(0,0,0,0.9);}
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes uncoverbg
+{
+    from{background-color: rgba(0,0,0,0.9);}
+    to{background-color: rgba(0,0,0,0);}
+}
+/* Standard syntax */
+@keyframes uncoverbg 
+{
+    from{background-color: rgba(0,0,0,0.9);}
+    to{background-color: rgba(0,0,0,0);}
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes RotateLeft
+{
+   from{transform: translate(-50%, -50%) rotate(0deg);}
+   to{transform: translate(-50%, -50%) rotate(360deg);}
+}
+/* Standard syntax */
+@keyframes RotateLeft
+{
+   from{transform: translate(-50%, -50%) rotate(0deg);}
+   to{transform: translate(-50%, -50%) rotate(360deg);}
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes RotateRight
+{
+    0%   {transform: translate(-50%,-50%)rotate(0deg);}
+    25%  {transform: translate(-50%,-50%)rotate(-90deg);}
+    50%  {transform: translate(-50%,-50%)rotate(-180deg);}
+    75%  {transform: translate(-50%,-50%)rotate(-270deg);}
+    100% {transform: translate(-50%,-50%)rotate(-360deg);}
+}
+/* Standard syntax */
+@keyframes RotateRight
+{ 
+    0%   {transform: translate(-50%,-50%)rotate(0deg);}
+    25%  {transform: translate(-50%,-50%)rotate(-90deg);}
+    50%  {transform: translate(-50%,-50%)rotate(-180deg);}
+    75%  {transform: translate(-50%,-50%)rotate(-270deg);}
+    100% {transform: translate(-50%,-50%)rotate(-360deg);}
+}
+.messageMail
+{
+    position: fixed;
+    width: 25%;
+    background-color: white;
+    top: -25em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2em;
+    z-index: 1;
+    padding-top: 0.5em;
+    box-shadow: 0px 0px 10px #888888;
+}
+.messageMailVisible
+{
+    top: 50%;
+    -webkit-animation-name: RotateLeft; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.7s;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
+    animation-name: RotateLeft;
+    animation-duration: 0.7s;
+    animation-iteration-count: 1;
+    transition: 0.7s top;
+}
+.btnmessage
+{
+   background-color: #ff3333;
+   margin-top: 8em;
+}
+.btnmessage:hover
+{
+   background-color: #b30000;
+}
+.personalsize
+{
+    font-size: 15pt;
+}
+.messageMailHidden
+{
+    top: -25em;
+    -webkit-animation-name: RotateRight; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.7s;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
+    animation-name: RotateRight;
+    animation-duration: 0.7s;
+    animation-iteration-count: 1;
+    transition: 0.7s top;
+}
+@media screen and (max-width: 850px) 
+{
+  .messageMail
+  {
+      width: 60%;
+  }
+  .btn
+  {
+     width: 70%;
+     margin-left: 15%;
+  }
+}
