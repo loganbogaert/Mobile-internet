@@ -1,0 +1,22 @@
+.switchBase
+{
+    width: 50px;
+    height: 15px;
+    background-color: #66e0ff;
+    border-radius: 10px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#switchButton
+{
+    background-color: #e6e6e6;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px grey;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%,-50%);
+}
