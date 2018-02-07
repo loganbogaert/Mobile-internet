@@ -1,34 +1,35 @@
 //*******************************<vars>********************************
 var lengte = 0;
-var opacity = 0;
 var klokID;
 var bool = true;
 var bool2 = true;
 var bool3 = true;
 var aantal = 1;
-var nummers = ["0","0,0666666666666667","0,1333333333333333","0.2","0,2666666666666667","0,3333333333333333","0.4",
-"0,4666666666666667","0,5333333333333333","0.6","0,6666666666666667","0,7333333333333333","0.8","0,8666666666666667","0,9333333333333333","1"]
+var px = 32;
 //*******************************<function>*****************************
 function Move()
 {
     // lengte verhogen of verlagen
     if(bool2){ lengte = lengte + 2.5;} else {lengte = lengte - 2.5;}
     // property aanpassen
-    document.getElementById("switchMainButton").style.left = lengte +"%";
+    document.getElementById("switchMainButton").style.left = lengte +"px";
     // zien of men de timer moet stoppen
-    if(bool2 && lengte==75) { StopTimer();bool = true; bool2=false;}
+    if(bool2 && lengte==70) { StopTimer();bool = true; bool2=false;}
     // zien of men de timer moet stoppen
     if(!bool2 && lengte==0)  { StopTimer();bool = true; bool2=true;}
-    // opacity aanpassen
-    opacity = nummers[aantal];
     // opacity van div aanpassen
-    document.getElementById("switchMainButton").style.backgroundColor = "rgba(115,115,115," +opacity +")";
+    // width aanpassen
+    document.getElementById("switchMainButton").style.width = px +"px";
+    // heigth aanpassen
+    document.getElementById("switchMainButton").style.height = px +"px";
     // aantal verhogen of verlagen
-    if(bool3){aantal++;} else {aantal--;}
+    if(bool3){aantal++; px = px +2;} else {aantal--; px = px -2;}
     // aantal en bool aanpassen
-    if(aantal==16) {bool3 = false; aantal=14;}
+    if(aantal==15) {bool3 = false; px = 56;}
     // aantal en bool aanpassen
-    if(aantal==-1) {bool3 = true; aantal=1;}
+    if(aantal==1) {bool3 = true; px = 32;}
+   
+    
 }
 //*******************************<function>*****************************
 function Timer()
