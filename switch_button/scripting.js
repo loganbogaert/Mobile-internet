@@ -17,7 +17,6 @@ function Move()
     if(bool2 && lengte==70) { StopTimer();bool = true; bool2=false;}
     // zien of men de timer moet stoppen
     if(!bool2 && lengte==0)  { StopTimer();bool = true; bool2=true;}
-    // opacity van div aanpassen
     // width aanpassen
     document.getElementById("switchMainButton").style.width = px +"px";
     // heigth aanpassen
