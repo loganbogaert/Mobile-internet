@@ -28,8 +28,6 @@ function Move()
     if(aantal==15) {bool3 = false; px = 56;}
     // aantal en bool aanpassen
     if(aantal==1) {bool3 = true; px = 32;}
-   
-    
 }
 //*******************************<function>*****************************
 function Timer()
@@ -40,5 +38,6 @@ function Timer()
 //*******************************<function>*****************************
 function StopTimer()
 {
+    // interval stoppen
     clearInterval(klokID);
 }
